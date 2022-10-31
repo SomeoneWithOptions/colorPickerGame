@@ -34,15 +34,17 @@ function addTextToButtons(arr) {
 function HandleClick(event) {
 
     const responseText = document.getElementById('message');
+    responseText.classList.remove('fadeOut')
+
     if (event.innerText === CorrectColor) {
-        responseText.innerText = 'Correct!';
         responseText.style.opacity = 1;
+        responseText.innerText = 'Correct!';
         responseText.style.color = '#69ba94';
         CreateInitialParamenters();
     }
     else {
-        responseText.innerText = 'Wrong!';
         responseText.style.opacity = 1;
+        responseText.innerText = 'Wrong!';
         responseText.style.color = '#ba6a8f';
     }
 
@@ -50,7 +52,8 @@ function HandleClick(event) {
     setTimeout(() => {
         responseText.style.opacity = 0;
         responseText.classList.remove('fadeOut')
-    }, 1800);
+    }
+        , 800);
 
 }
 

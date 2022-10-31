@@ -43,7 +43,7 @@ h1 {
 }
 
 .fadeOut {
-    animation: fadeOut 2s;
+    animation: fadeOut 800ms forwards;
 }
 
 @keyframes fadeOut {
