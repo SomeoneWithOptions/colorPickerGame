@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #080808;
+    flex-direction: column;
+}
+
+#color {
+    width: 500px;
+    height: 300px;
+    border-radius: 1rem;
+
+    -webkit-box-shadow: 10px 10px 23px 1px rgb(255, 255, 255);
+    -moz-box-shadow: 10px 10px 23px 1px rgb(255, 255, 255);
+    box-shadow: 10px 10px 23px -12px rgb(255, 255, 255);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+button {
+    font-size: 1.5rem;
+}
+
+#message {
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(252, 246, 189);
+    margin-bottom: 5rem;
+    text-shadow: 2px 2px 0px rgba(150, 150, 150, .5);
+
+}
+
+.fadeOut {
+    animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 36rem) {
+    #color {
+        width: 100%;
+    }
+
+    section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 25rem) {
+    button {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+}
