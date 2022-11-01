@@ -3,16 +3,28 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #080808;
+    background-color: #0B0649;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
 }
 
+section {
+    width: 50%;
+}
+
+.color-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
 #color {
+    border : 2px solid #fff;
+
     width: 500px;
     height: 300px;
     border-radius: 1rem;
-
+    
     -webkit-box-shadow: 10px 10px 23px 1px rgb(255, 255, 255);
     -moz-box-shadow: 10px 10px 23px 1px rgb(255, 255, 255);
     box-shadow: 10px 10px 23px -12px rgb(255, 255, 255);
@@ -20,7 +32,7 @@ body {
 
 .buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 4rem;
 }
 
@@ -33,11 +45,12 @@ button {
     margin-top: 4rem;
     font-size: 2rem;
     font-weight: 700;
-    color: black;
+    color: #0B0649;
     text-align: center;
 }
 
 h1 {
+    text-align: center;
     font-weight:  200;
     color: rgb(252, 246, 189);
     margin-bottom: 5rem;
@@ -75,7 +88,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 36rem) {
+@media screen and (max-width: 54rem) {
     #color {
         width: 100%;
     }
@@ -83,6 +96,7 @@ h1 {
     section {
         width: 90%;
     }
+
 }
 
 @media screen and (max-width: 25rem) {
