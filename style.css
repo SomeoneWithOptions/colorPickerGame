@@ -10,6 +10,7 @@ body {
 
 section {
     width: 50%;
+
 }
 
 .color-container{
@@ -34,6 +35,7 @@ section {
     display: flex;
     justify-content: space-around;
     margin-top: 4rem;
+    padding : 0 10rem;
 }
 
 button {
@@ -96,13 +98,24 @@ h1 {
     section {
         width: 90%;
     }
-
 }
 
 @media screen and (max-width: 25rem) {
     button {
-        font-size: 1rem;
+        font-size: 1rem; 
         margin-top: 2rem;
     }
 
+    .buttons {
+        padding : 0;
+    }
+
 }
+
+@media screen and (max-width: 84rem) {
+    .buttons
+    {
+        padding : 0 ;
+    }
+}
+
