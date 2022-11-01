@@ -61,6 +61,9 @@ function CreateInitialParamenters() {
     allColors = getArrayWith3RandomColors();
     CorrectColor = allColors[allColors[3]];
 
+    [...document.getElementsByTagName('button')].map((button) => {
+        button.style.borderColor = CorrectColor;
+    })
     changeDivColor(CorrectColor);
     addTextToButtons(allColors);
 }

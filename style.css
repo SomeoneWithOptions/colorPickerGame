@@ -41,6 +41,9 @@ section {
 button {
     font-size: 1.5rem;
     font-weight: 400;
+    border-radius: .6rem;
+    /* border : 2px solid black; */
+    padding: 5.rem;
 }
 
 #message {
